@@ -1,0 +1,96 @@
+/* components buttons */
+
+.hero__btn {
+    @extend %btn;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color var(--anim-duration-timing), color var(--anim-duration-timing), box-shadow var(--anim-duration-timing);
+
+    &:hover,
+    &:focus {
+        background-color: var(--rare-bg-cl);
+        color: var(--second-cl);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.close-btn {
+    height: 30px;
+    width: 30px;
+    fill: var(--add_black_cl);
+    background-color: var(--main-bg-cl);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-cl);
+    }
+}
+
+.sale-form__btn {
+    @extend %btn;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color var(--anim-duration-timing);
+
+    &:hover,
+    &:focus {
+        background-color: var(--sale-form__btn-hover);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.subs-form__btn {
+    @extend %btn;
+    padding: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.filters__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-cl);
+    background: var(--rare-bg-cl);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+    display: inline-block;
+    border: none;
+
+    transition: background var(--anim-duration-timing), color var(--anim-duration-timing), box-shadow var(--anim-duration-timing);
+    
+    &:hover,
+    &:focus,
+    &:active {
+        background: var(--accent-bg-cl);
+        color: var(--add_white_cl);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+
+

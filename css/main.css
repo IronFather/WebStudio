@@ -62,10 +62,26 @@
 
 /* utils mixins */ /* utils placeholders */
 .portfolio, .clients, .team, .service, .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .portfolio, .clients, .team, .service, .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio, .clients, .team, .service, .features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio, .clients, .team, .service, .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .subs-form__btn, .sale-form__btn, .hero__btn {
@@ -153,12 +169,28 @@ img {
 }
 
 /* components sections */ /* components containers */
+/* breakpoints 480 / 768 / 1200 */
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 /* components buttons */
@@ -681,7 +713,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   background: var(--second-bg-cl);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero/img-hero.jpg), linear-gradient(to right, #C4C4C4, #C4C4C4);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img-hero.jpg), linear-gradient(to right, #C4C4C4, #C4C4C4);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

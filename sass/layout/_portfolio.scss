@@ -21,11 +21,6 @@
         margin-bottom: 0;
     }
 
-    &__list {
-        --items: 3;
-        --indent: 30px;
-    }
-
     &__link {
         text-decoration: none;
         display: block;
@@ -47,5 +42,22 @@
         border-left: 1px solid var(--border-card-cl);
         border-right: 1px solid var(--border-card-cl);
         border-bottom: 1px solid var(--border-card-cl);
+    }
+}
+
+.portfolio__list {
+    --indent: 30px;
+    --items: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio__list {
+        --items: 2;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio__list {
+        --items: 3;
     }
 }

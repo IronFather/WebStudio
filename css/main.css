@@ -825,6 +825,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  margin: -15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -854,6 +855,21 @@ img {
     justify-content: center;
   }
 }
+.features__list {
+  --indent: 30px;
+  --items: 1;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    --items: 4;
+  }
+}
+
 /* layout service */
 .service {
   padding-top: 0;

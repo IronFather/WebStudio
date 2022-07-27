@@ -2,11 +2,11 @@
 /* breakpoints 480 / 768 / 1200 */
 
 .container {
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid red;
 
     @media screen and (min-width: 480px) {
         max-width: 480px;
@@ -20,4 +20,3 @@
         max-width: 1200px;
     }
 }
-

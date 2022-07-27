@@ -61,3 +61,9 @@
         --items: 3;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio__desc--padding {
+        padding-bottom: 56px
+    }
+}

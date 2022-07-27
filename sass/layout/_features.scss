@@ -14,23 +14,61 @@
         letter-spacing: 0.03em;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
-
     &__item {
-        flex-basis: 270px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     &__icons {
         display: flex;
-        width: 270px;
+        width: 100%;
         height: 120px;
         background: var(--rare-bg-cl);
         border-radius: 4px;
         margin-bottom: 30px;
         align-items: center;
         justify-content: center;
+        outline: 1px solid green;
     }
 }
 
+.features__list {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .features__item {
+        flex-basis: 450px;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .features__item {
+        flex-basis: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .features__item {
+        flex-basis: 270px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features__subtitle {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -49,4 +49,25 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .site-nav__list {
+        display: none;
+    }
+}
 
+.site-nav__logo {
+    @media screen and (max-width: 479px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}

@@ -4,11 +4,11 @@
     display: inline-block;
     font-family: var(--second-font);
     font-weight: 700;
-    font-size: 26px;
     line-height: 1.19;
     color: var(--accent-cl);
     text-decoration: none;
     list-style: none;
+
 
     &--black {
         color: var(--add_black_cl);
@@ -19,4 +19,15 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .logo {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        }
+}
 

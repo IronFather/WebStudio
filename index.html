@@ -41,18 +41,7 @@
             >Web<span class="logo--black">Studio</span></a
           >
 
-          <!-- mobile menu -->
-
-          <button
-            class="mobile-menu__btn"
-            type="button"
-            aria-label="mobile-menu__btn"
-          >
-            <svg class="mobile-menu__icon" width="24" height="16">
-              <use href="/images/icons.svg#icon-menu"></use>
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+          <!-- site-nav -->
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a
@@ -101,6 +90,23 @@
             </li>
           </ul>
         </div>
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="mobile-menu-btn"
+          data-menu-button
+        >
+          <svg class="mobile-menu-icon" width="24" height="16">
+            <use
+              class="mobile-menu-burger"
+              href="/images/icons.svg#icon-menu"
+            ></use>
+            <use
+              class="mobile-menu-close"
+              href="./images/icons.svg#icon-close_menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -114,7 +120,7 @@
           </button>
         </div>
       </section>
-      -->
+
       <!-- modal window -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -229,6 +235,79 @@
             <button class="btn sale-form__btn" type="submit">Отправить</button>
           </form>
         </div>
+      </div>
+
+      <!-- mobile-menu -->
+      <div class="mobile-menu is-open" data-menu>
+        <ul class="mobile-menu__nav list">
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="./index.html"
+              >Студия
+            </a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="./portfolio.html"
+              >Портфолио
+            </a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="mobile-menu__nav-link link" href="#Контакты">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts list">
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-link link mobile-menu__contacts--tel"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__contacts-item">
+            <a
+              class="mobile-menu__contacts-link link mobile-menu__contacts--email"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials list">
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a
+              class="mobile-menu__socials-link link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
       </div>
 
       <!-- features -->
@@ -887,5 +966,6 @@
 -->
     <!-- modal.js -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

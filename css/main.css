@@ -743,6 +743,7 @@ img {
 
 /* components mobile-menu */
 .mobile-menu-btn {
+  fill: var(--second-cl);
   background-color: transparent;
   border: none;
   width: 40px;
@@ -756,7 +757,19 @@ img {
   outline: 1px solid orangered;
 }
 
+.mobile-menu-burger {
+  opacity: 0;
+}
+
+.mobile-menu-btn.is-open .mobile-menu-burger {
+  opacity: 1;
+}
+
 .mobile-menu-close {
+  opacity: 1;
+}
+
+.mobile-menu-btn.is-open .mobile-menu-close {
   opacity: 0;
 }
 

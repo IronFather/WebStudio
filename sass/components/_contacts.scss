@@ -12,6 +12,11 @@
         list-style: none;
     }
 
+    &__list {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     &__item {
         display: flex;
         align-items: center;
@@ -28,8 +33,6 @@
     display: flex;
     align-items: center;
     transition: color var(--anim-duration-timing);
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     &:hover,
     &:focus {
@@ -59,6 +62,24 @@
 @media screen and (max-width: 767px) {
     .contacts {
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .contacts__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 10px;
+        margin-left: 84px;
+        justify-content: left;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .contacts__link--tel {
+        margin-left: 0;
     }
 }
 

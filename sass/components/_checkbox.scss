@@ -43,3 +43,14 @@
 .checkbox__input:checked+.checkbox__icon .svg-check {
     opacity: 1;
 }
+
+.checkbox__agre {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1199px) {
+    .checkbox__agre {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+}

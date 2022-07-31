@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-03-yashchuk-yurii</title>
+    <title>goit-markup-hw-08-yashchuk-yurii</title>
 
     <!-- modern-normalize -->
     <link
@@ -94,7 +94,7 @@
         </div>
 
         <!-- mobile-menu -->
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <ul class="mobile-menu__nav list">
             <li class="mobile-menu__nav-item">
               <a class="mobile-menu__nav-link link" href="./index.html"
@@ -172,7 +172,9 @@
         <button
           class="mobile-menu-btn is-open"
           type="button"
-          aria-label="mobile-menu-btn"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
           data-menu-button
         >
           <svg class="mobile-menu-icon" width="24" height="16">
@@ -193,25 +195,25 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <!--filters
-          <ul class="filters list">
-            <li class="filters__item">
+          <!--filters -->
+          <ul class="filters list card-set">
+            <li class="filters__item card-set__item">
               <button class="filters__btn" type="button">Все</button>
             </li>
-            <li class="filters__item">
+            <li class="filters__item card-set__item">
               <button class="filters__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filters__item">
+            <li class="filters__item card-set__item">
               <button class="filters__btn" type="button">Приложения</button>
             </li>
-            <li class="filters__item">
+            <li class="filters__item card-set__item">
               <button class="filters__btn" type="button">Дизайн</button>
             </li>
-            <li class="filters__item">
+            <li class="filters__item card-set__item">
               <button class="filters__btn" type="button">Маркетинг</button>
             </li>
           </ul>
--->
+
           <!-- portfolio -->
           <h1 class="portfolio__title">Портфолио</h1>
           <ul class="portfolio__list list card-set">

@@ -4,6 +4,7 @@
 .sale-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     &__title {
         color: var(--second-cl);
@@ -12,7 +13,6 @@
         line-height: 1.15;
 
         display: block;
-        margin-top: 40px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -45,7 +45,7 @@
 .sale-form__input {
     margin: 0;
     padding: 0;
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -67,7 +67,8 @@
     display: block;
     margin: 0;
     padding: 0;
-    width: 448px;
+    font-size: 12px;
+    width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -125,7 +126,6 @@
     }
 }
 
-// 30/07
 .subs-form--wrap {
     display: block;
     margin-right: auto;

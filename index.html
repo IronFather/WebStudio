@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-07-yashchuk-yurii</title>
+    <title>goit-markup-hw-08-yashchuk-yurii</title>
 
     <!-- modern-normalize -->
     <link
@@ -94,7 +94,7 @@
         </div>
 
         <!-- mobile-menu -->
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
           <ul class="mobile-menu__nav list">
             <li class="mobile-menu__nav-item">
               <a
@@ -172,7 +172,9 @@
         <button
           class="mobile-menu-btn is-open"
           type="button"
-          aria-label="mobile-menu-btn"
+          aria-label="Переключатель мобильного меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
           data-menu-button
         >
           <svg class="mobile-menu-icon" width="24" height="16">
@@ -308,8 +310,10 @@
                   />
                 </svg>
               </span>
-              <span>Соглашаюсь с рассылкой и принимаю</span>
-              <a class="checkbox__link link" href="">Условия договора</a>
+              <div class="checkbox__agre">
+                <span>Соглашаюсь с рассылкой и принимаю</span>
+                <a class="checkbox__link link" href="">Условия договора</a>
+              </div>
             </label>
             <button class="btn sale-form__btn" type="submit">Отправить</button>
           </form>

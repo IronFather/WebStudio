@@ -2,9 +2,32 @@
 
 .filters {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     &__item:not(:last-child) {
         margin-right: 8px;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .filters {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filters {
+        margin-bottom: 50px;
+    }
+}
+
+.filters {
+    --indent: 30px;
+    --items: 5;
+
+    @media screen and (min-width: 768px) {
+        --items: 3;
+    }
+
+
 }

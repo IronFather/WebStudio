@@ -26,7 +26,7 @@
     color: var(--add_white_cl);
     background: var(--accent-bg-cl);
     text-align: center;
-    width: 200px;
+    min-width: 200px;
     border-radius: 4px;
 
     font-weight: 700;
@@ -35,5 +35,6 @@
     letter-spacing: 0.06em;
     cursor: pointer;
     border: none;
+
 }
 

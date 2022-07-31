@@ -90,7 +90,7 @@
   color: var(--add_white_cl);
   background: var(--accent-bg-cl);
   text-align: center;
-  width: 200px;
+  min-width: 200px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -282,6 +282,12 @@ img {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    display: inline-block;
+    min-width: 200px;
   }
 }
 /* components socials */
@@ -527,9 +533,14 @@ img {
     justify-content: left;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link--tel {
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__icon {
+    margin-right: 8px;
   }
 }
 /* components subtitle */

@@ -63,7 +63,15 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .portfolio__desc--padding {
-        padding-bottom: 56px
+    .portfolio__link--grow {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .portfolio__desc--grow {
+        flex-grow: 1;
     }
 }

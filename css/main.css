@@ -207,7 +207,6 @@ img {
   padding: 10px 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--anim-duration-timing);
 }
@@ -1354,7 +1353,14 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .portfolio__desc--padding {
-    padding-bottom: 56px;
+  .portfolio__link--grow {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__desc--grow {
+    flex-grow: 1;
   }
 }/*# sourceMappingURL=main.css.map */

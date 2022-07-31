@@ -22,3 +22,17 @@
         margin-bottom: 60px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .subs-form__email {
+        width: 450px;
+    }
+}

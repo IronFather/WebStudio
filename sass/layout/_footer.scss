@@ -11,10 +11,14 @@
     &__logo {
         margin-bottom: 20px;
     }
-
-    &__container {
-        display: flex;
-        align-items: baseline;
-    }
 }
 
+// 30/07
+
+@media screen and (max-width: 767px) {
+    .footer__wrap {
+        display: block;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}

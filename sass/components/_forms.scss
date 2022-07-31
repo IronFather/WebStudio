@@ -88,10 +88,6 @@
     flex-direction: column;
     margin-left: auto;
 
-    &--wrap {
-        display: flex;
-    }
-
     &__label {
         display: inline-block;
         font-weight: 700;
@@ -129,3 +125,32 @@
     }
 }
 
+// 30/07
+.subs-form--wrap {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .subs-form--wrap {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subs-form__label {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .subs-form--wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+    

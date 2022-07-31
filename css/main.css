@@ -90,7 +90,7 @@
   color: var(--add_white_cl);
   background: var(--accent-bg-cl);
   text-align: center;
-  min-width: 200px;
+  width: 200px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -195,6 +195,7 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    display: flex;
   }
 }
 
@@ -277,6 +278,13 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 767px) {
+  .subs-form__btn {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* components socials */
 /* socials team */
 .socials {
@@ -346,6 +354,25 @@ img {
   width: 206px;
 }
 
+@media screen and (max-width: 767px) {
+  .socials__title {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .socials {
+    margin-bottom: 60px;
+  }
+}
 /* components logo */
 .logo {
   display: inline-block;
@@ -595,9 +622,6 @@ img {
   flex-direction: column;
   margin-left: auto;
 }
-.subs-form--wrap {
-  display: flex;
-}
 .subs-form__label {
   display: inline-block;
   font-weight: 700;
@@ -632,6 +656,31 @@ img {
   fill: var(--add_white_cl);
 }
 
+.subs-form--wrap {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subs-form--wrap {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subs-form__label {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subs-form--wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 /* components checkbox */
 .checkbox {
   display: flex;
@@ -1177,6 +1226,11 @@ img {
     --items: 6;
   }
 }
+@media screen and (max-width: 767px) {
+  .clients__list {
+    justify-content: center;
+  }
+}
 
 /* layout footer */
 .footer {
@@ -1189,11 +1243,14 @@ img {
 .footer__logo {
   margin-bottom: 20px;
 }
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
 
+@media screen and (max-width: 767px) {
+  .footer__wrap {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
 /* layout filters */
 .filters {
   justify-content: center;

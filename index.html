@@ -387,7 +387,11 @@
             <li class="service__item">
               <img
                 class="service__img"
-                src="./images/service/service-1_l.jpg"
+                srcset="
+                  ./images\service\service-1.jpg    1x,
+                  ./images\service\service-1@2x.jpg 2x
+                "
+                src="./images/service/service-1.jpg"
                 alt="Разработка десктопных приложений"
                 width="370"
                 height="294"
@@ -399,7 +403,11 @@
             <li class="service__item">
               <img
                 class="service__img"
-                src="./images/service/service-2_l.jpg"
+                srcset="
+                  ./images\service\service-2.jpg    1x,
+                  ./images\service\service-2@2x.jpg 2x
+                "
+                src="./images/service/service-2.jpg"
                 alt="Разработка мобильных приложений"
                 width="370"
                 height="294"
@@ -411,7 +419,11 @@
             <li class="service__item">
               <img
                 class="service__img"
-                src="./images/service/service-3_l.jpg"
+                srcset="
+                  ./images\service\service-3.jpg    1x,
+                  ./images\service\service-3@2x.jpg 2x
+                "
+                src="./images/service/service-3.jpg"
                 alt="Яркий дизайн сайтов и приложений"
                 width="370"
                 height="294"
@@ -430,13 +442,67 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list list card-set">
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./images/team/team-1_l.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- team peacture 1 - comp -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-1_comp.webp    1x,
+                    ./images\team\team-1_comp@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-1_comp.jpg    1x,
+                    ./images\team\team-1_comp@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 1 - tab -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-1_tab.webp    1x,
+                    ./images\team\team-1_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-1_tab.jpg    1x,
+                    ./images\team\team-1_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 1 - mob -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-1_mob.webp    1x,
+                    ./images\team\team-1_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-1_mob.jpg    1x,
+                    ./images\team\team-1_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 1 - img -->
+                <img
+                  class="team__img"
+                  src="./images/team/team-1_mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__member">Игорь Демьяненко</h3>
               <p class="team__position" lang="en">Product Designer</p>
               <ul class="socials list">
@@ -511,13 +577,67 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./images/team/team-2_l.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- team peacture 2 - comp -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-2_comp.webp    1x,
+                    ./images\team\team-2_comp@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-2_comp.jpg    1x,
+                    ./images\team\team-2_comp@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 2 - tab -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-2_tab.webp    1x,
+                    ./images\team\team-2_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-2_tab.jpg    1x,
+                    ./images\team\team-2_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 2 - mob -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-2_mob.webp    1x,
+                    ./images\team\team-2_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-2_mob.jpg    1x,
+                    ./images\team\team-2_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 2 - img -->
+                <img
+                  class="team__img"
+                  src="./images/team/team-2_mob.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__member">Ольга Репина</h3>
               <p class="team__position" lang="en">Frontend Developer</p>
               <ul class="socials list">
@@ -592,13 +712,67 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./images/team/team-3_l.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- team peacture 3 - comp -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-3_comp.webp    1x,
+                    ./images\team\team-3_comp@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-3_comp.jpg    1x,
+                    ./images\team\team-3_comp@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 3 - tab -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-3_tab.webp    1x,
+                    ./images\team\team-3_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-3_tab.jpg    1x,
+                    ./images\team\team-3_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 3 - mob -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-3_mob.webp    1x,
+                    ./images\team\team-3_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-3_mob.jpg    1x,
+                    ./images\team\team-3_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 3 - img -->
+                <img
+                  class="team__img"
+                  src="./images/team/team-3_mob.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__member">Николай Тарасов</h3>
               <p class="team__position" lang="en">Marketing</p>
               <ul class="socials list">
@@ -673,13 +847,67 @@
               </ul>
             </li>
             <li class="team__item card-set__item">
-              <img
-                class="team__img"
-                src="./images/team/team-4_l.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- team peacture 4 - comp -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-4_comp.webp    1x,
+                    ./images\team\team-4_comp@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images\team\team-4_comp.jpg    1x,
+                    ./images\team\team-4_comp@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 4 - tab -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-4_tab.webp    1x,
+                    ./images\team\team-4_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images\team\team-4_tab.jpg    1x,
+                    ./images\team\team-4_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 4 - mob -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-4_mob.webp    1x,
+                    ./images\team\team-4_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images\team\team-4_mob.jpg    1x,
+                    ./images\team\team-4_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- team peacture 4 - img -->
+                <img
+                  class="team__img"
+                  src="./images/team/team-4_mob.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <h3 class="team__member">Михаил Ермаков</h3>
               <p class="team__position" lang="en">UI Designer</p>
               <ul class="socials list">

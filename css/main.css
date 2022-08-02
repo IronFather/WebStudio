@@ -1172,8 +1172,8 @@ img {
   margin-bottom: 16px;
   justify-content: center;
 }
-.team__img {
-  margin-bottom: 30px;
+.team__member {
+  margin-top: 30px;
 }
 .team__item {
   background: var(--main-bg-cl);

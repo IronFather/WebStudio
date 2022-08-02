@@ -149,7 +149,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -812,7 +811,6 @@ img {
   padding: 0;
   margin: 0;
   z-index: 1000;
-  outline: 1px solid orangered;
 }
 .mobile-menu-btn:hover, .mobile-menu-btn:focus {
   fill: var(--sale-form__btn-hover);
@@ -1060,7 +1058,6 @@ img {
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
-  outline: 1px solid green;
 }
 
 .features__list {

@@ -35,7 +35,11 @@
 }
 
 .clients__link {
-    width: 210px;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 210px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 226px;

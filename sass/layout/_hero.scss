@@ -91,6 +91,11 @@
     margin-right: auto;
     text-align: center;
 
+    @media screen and (max-width: 479px) {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         width: 696px;

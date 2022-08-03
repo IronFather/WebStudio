@@ -8,6 +8,11 @@
     margin-right: auto;
     // outline: 1px solid red;
 
+    @media screen and (max-width: 479px) {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     @media screen and (min-width: 480px) {
         max-width: 480px;
     }

@@ -1011,34 +1011,6 @@ img {
   }
 }
 
-.site-headline {
-  color: var(--add_white_cl);
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
-  width: 360px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-@media screen and (max-width: 479px) {
-  .site-headline {
-    max-width: 100%;
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .site-headline {
-    font-size: 44px;
-    width: 696px;
-    line-height: 1.36;
-  }
-}
-
 /* layout modal */
 .modal {
   display: flex;
